@@ -1,0 +1,32 @@
+{
+    "name": "erendi/fileuploader",
+    "description": "File uploader membuat multiple upload file",
+    "type": "library",
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Erendi\\Fileuploader\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "bimacoding",
+            "email": "bimacoding@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "extra": {
+        "laravel":{
+            "providers": [
+                "Erendi\\Fileuploader\\FileuploaderServiceProvider"
+            ],
+            "aliases": {
+                "Fileupload": "Erendi\\Fileuploader\\Facades\\Fileuploader"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
