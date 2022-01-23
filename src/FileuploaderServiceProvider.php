@@ -34,6 +34,9 @@ class FileuploaderServiceProvider extends ServiceProvider
             __DIR__ . '/../config/fileuploader.php'  => config_path('fileuploader.php'),
         ], 'config');
         $this->publishes([
+            __DIR__ . '/../controller/FileuploadController.php'  => app_path('Http/Service/FileuploadController.php'),
+        ], 'app');
+        $this->publishes([
             __DIR__ . '/../assets' => public_path('vendor'),
         ], 'public');
         $this->publishes([
